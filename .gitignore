@@ -1,0 +1,4 @@
+**/*.pyc
+**/__pychache__
+**/sl_class_inputs.json
+**/priorem/

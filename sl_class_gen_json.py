@@ -4,7 +4,10 @@ import json
 fpath = os.path.realpath(__file__)
 cwd = os.path.dirname(fpath)
 
-slct = {"conda":        {"ostypes": ["osx"],
+slct = {"alacritty":    {"ostypes": ["osx"],
+                         "paths": [{"source": {"all": "$AB_DLZ_DOTFILES/alacritty"},
+                                    "target": {"osx": "$HOME/.config/alacritty"}}]},
+        "conda":        {"ostypes": ["osx"],
                          "paths": [{"source": {"all": "$AB_DLZ_DOTFILES/.condarc"},
                                       "target": {"osx": "$HOME/.condarc"}}]},
         "digikam":      {"ostypes": ["osx"],

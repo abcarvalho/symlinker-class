@@ -41,7 +41,7 @@ class SLObj():
 
     def get_config_data(self):
         # update list of config files and directories:
-        os.system(cwd + "ac_sl_class.py")
+        os.system('python ' + cwd + "/sl_class_gen_json.py")
 
         # import data
         f = open(cwd + '/sl_class_inputs.json',)

@@ -3,7 +3,7 @@ import sys
 import os
 
 # Get current working directory
-wkdir = os.environ["AB_DLZ_DOTFILES"] + "/class-symlinker"
+wkdir = os.environ["AB_DLZ_CONFIG"] + "/class-symlinker"
 sys.path.append(wkdir)
 from ac_sl_class import SLObj
 

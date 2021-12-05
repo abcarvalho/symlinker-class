@@ -11,8 +11,7 @@ class SLObj():
     # defining constructor
     def __init__(self):
         self._ostype = ostype = 'osx' if os.uname().sysname == 'Darwin' else "arch"
-        self.osx_apps = self.get_os_apps("osx")
-        self.arch_apps = self.get_os_apps("arch")
+        self = self.get_config_data()
 
     def sl_check_avail(self, app: str, ostype: str):
         if (ostype not in ['osx', 'arch']):
